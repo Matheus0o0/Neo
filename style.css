@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    justify-content: space-around;
+}
+.center{
+    max-width: 1100px;
+    padding: 0 2%;
+    display: flex;
+    margin-left: 800px;
+}
+.menu-container{
+    justify-content: space-around;
+    padding:0 90px;
+}
+.menu-container a{
+    display: inline-block;
+    line-height: 50px;
+    transition: 0.6s;
+    text-decoration: none;
+    color: #ff8501;
+    font-family: "Roboto",sans-serif;
+    font-size: 20px;
+}
+.menu-container a:hover{
+    color: #b96204; 
+}
+.logo{
+    height: 30px;
+    margin-left: 150px;
+}
+.logo img{
+    max-width: 100px;
+    max-height: 100px;
+}
+#home{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+    display: flex;
+}
+#home img{
+    max-width: 500px;
+    max-height: 500px;
+    flex: 1;
+    padding: 10px;
+    position: absolute;
+    bottom: 200px;
+    left: 1250px;
+}
+.main h1{
+    font-size: 90px;
+    color: #ff8501;
+    position: absolute;
+    bottom: 250px;
+    left: 350px;
+    font-family: "Roboto",sans-serif;
+    flex: 1;
+    padding: 10px;
+}
+h1 span{
+    color: white;
+}
+#servicos{
+    background-color: #4d2057;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+#servicos h1{ 
+    font-family: "Roboto",sans-serif;
+    color: #fff;
+    font-size: 7rem;
+    position: absolute;
+}
+#servicos img{
+    border-radius: 50%;
+    padding: 9px;
+    margin-top: 200px;
+    border: 3px #ff8501 solid;
+}
+#servicos p {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    max-width: 450px;
+    color: #fff;
+    font-size: 20px;
+    padding: 45px;
+}
+#sobre {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .borda-texto {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border: none;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    border-radius: 10px;
+  }
+  .borda-texto::before,
+  .borda-texto::after {
+    position: absolute;
+    width: 2px;
+    background-color: #ff8501;
+    border-radius: 10px;
+  }
+  
+  .borda-texto::before {
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .borda-texto::after {
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .texto {
+    margin-top: 20px;
+  }
+  
+  .texto h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    color: #4d2057;
+    padding: 10 40px;
+    margin-bottom: 10px;
+  }
+  
+  #sobre p {
+    text-align: justify;
+    color: #4d2057;
+    font-size: 20px;
+    max-width: 400px;
+    margin-left: 0;
+  }
+  footer {
+    background-color: #ff8501;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  footer h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .contact-buttons a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+  }
+  
+  .contact-buttons a:hover {
+    background-color: #333;
+  }
+  #botao-seta {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ff8501;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+  .botoes-flutuantes {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botao-flutuante {
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #FF8501;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .botao-flutuante i {
+    color: #fff;
+  }
